@@ -1,0 +1,39 @@
+footer{
+  background-color: #313131;
+  bottom: 0;
+  //position: fixed;
+  left: 0;
+  width: 100%;
+}
+.footerSections{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #B7B7B7;
+  .footerSections__Title{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .footerSections__navItem{
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+.underlineSection{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  color: #B7B7B7;
+  .underlineSection__company{
+
+  }
+  .underlineSection__description{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .underlineSection__privacyPolice{
+
+  }
+}

@@ -1,0 +1,144 @@
+.MainPage{
+  background-color: #161616;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ImageSection {
+  .ImageSection__image {
+    width: 1920px;
+    height: 1080px;
+  }
+
+  .ImageSection__title {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFFFFF;
+    width: 35%;
+  }
+
+  .ImageSection__description {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #B7B7B7;
+    width: 25%;
+  }
+
+  .ImageSection__buttons__catalogue {
+    position: absolute;
+    background: transparent;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid #E7772E;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    top: 70%;
+    left: 15%;
+  }
+
+  .ImageSection__buttons__catalogue:hover {
+    background: #E7772E;
+    color: #FFFFFF;
+    border: none;
+  }
+
+  .ImageSection__buttons__detailed {
+    position: absolute;
+    background: transparent;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid #E7772E;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    top: 70%;
+    left: 28%;
+  }
+
+  .ImageSection__buttons__detailed:hover {
+    background: #E7772E;
+    color: #FFFFFF;
+    border: none;
+  }
+
+  .strong1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 17%;
+  }
+
+  .strong2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 27%;
+  }
+
+  .strong3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+  }
+
+  .achievement1 {
+    color: #B7B7B7;
+    position: absolute;
+    top: 83%;
+    left: 15%;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .achievement2 {
+    color: #B7B7B7;
+    position: absolute;
+    top: 83%;
+    left: 25%;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .achievement3 {
+    color: #B7B7B7;
+    position: absolute;
+    top: 83%;
+    left: 40%;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+.CatalogueSection{
+  margin: 8% 5% 2% 5%;
+  .CatalogueSection__title{
+    //color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .CatalogueSection__productionCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .CatalogueSection__productionCards__item{
+      flex-basis: 35%;
+      .CatalogueSection__productionCards__item{
+
+      }
+    }
+  }
+}
