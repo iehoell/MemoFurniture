@@ -2,6 +2,8 @@ import React from 'react';
 import mainPageStyles from './mainPage.module.scss';
 import mainPageImage from '../../assets/MainPageImage.webp';
 import CatalogueCards from "../CatalogueCardsInMainPage/CatalogueCards";
+import AdvantagesCards from "../AdvantagesCardsInMainPage/AdvantagesCards";
+import ContactCard from "../ContactsCardInMainPage/ContactCards";
 
 function MainPage(){
     return(
@@ -37,13 +39,19 @@ function MainPage(){
                 <p className={mainPageStyles.CatalogueSection__title}>
                     Каталог
                 </p>
-                <div className={mainPageStyles.CatalogueSection__productionCards}>
-                        {/*<button className={mainPageStyles.CatalogueSection__productionCards__item__button}></button>*/}
-                    <CatalogueCards></CatalogueCards>
-                    <CatalogueCards></CatalogueCards>
-                    <CatalogueCards></CatalogueCards>
-                    <CatalogueCards></CatalogueCards>
-                </div>
+                <CatalogueCards></CatalogueCards>
+            </div>
+            <div className={mainPageStyles.CatalogueSection}>
+                <p className={mainPageStyles.CatalogueSection__title}>
+                    Преимущества
+                </p>
+                <AdvantagesCards></AdvantagesCards>
+            </div>
+            <div className={mainPageStyles.CatalogueSection}>
+                <p className={mainPageStyles.CatalogueSection__title}>
+                    Контакты
+                </p>
+                <ContactCard></ContactCard>
             </div>
         </div>
     );

@@ -1,0 +1,60 @@
+.Section{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+  .AdvantageCards__Section__Blocks{
+    width: 51%;
+    display: flex;
+    flex-wrap: wrap;
+    .Blocks__Goods{
+      height: 40%;
+      padding: 15px;
+      border-radius: 20px;
+      color: #B7B7B7;
+      background: #161616;
+      margin: 2% 2% 2% 0;
+      .Blocks__Goods__title{
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .Blocks__Employees{
+      height: 35%;
+      padding: 15px;
+      border-radius: 20px;
+      color: #B7B7B7;
+      background: #161616;
+      margin: 2% 1% 2% 0;
+      .Blocks__Employees__title{
+        font-size: 24px;
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+    }
+    .Blocks__Experience{
+      height: 35%;
+      padding: 15px;
+      border-radius: 20px;
+      color: #FFFFFF;
+      background: #E7772E;
+      margin: 2% 0 2% 1%;
+      .Blocks__Experience__title{
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+  .AdvantageCards__Section__Image{
+    .Image{
+      margin-top: 3%;
+      width: 550px;
+      height: 100%;
+      border-radius: 20px;
+    }
+    .Image:hover{
+      border: 1px solid #B7B7B7;
+    }
+  }
+}
