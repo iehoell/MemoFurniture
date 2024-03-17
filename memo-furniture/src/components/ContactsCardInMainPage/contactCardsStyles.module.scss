@@ -85,11 +85,25 @@
     }
   }
   .ContactCard__Section__Image{
-    .Image{
-      margin-top: 3%;
-      width: 550px;
-      height: 550px;
+    .firstMapStyle{
+      position:relative;
+      overflow:hidden;
       border-radius: 20px;
+  }
+    .secondMapStyle{
+      color:#eee;
+      font-size:12px;
+      position:absolute;
+      top:0;
+    }
+    .thirdMapStyle{
+      color:#eee;
+      font-size:12px;
+      position:absolute;
+      top:14px;
+    }
+    .fourthMapStyle{
+      position:relative;
     }
   }
 }

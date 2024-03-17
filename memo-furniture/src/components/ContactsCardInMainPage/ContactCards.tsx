@@ -6,7 +6,20 @@ function ContactCard(props){
     return(
         <div className={contactCardsCardsStyles.Section}>
             <div className={contactCardsCardsStyles.ContactCard__Section__Image}>
-                <img src={mainPageImage} className={contactCardsCardsStyles.Image}></img>
+                <div className={contactCardsCardsStyles.firstMapStyle}>
+                    <a href="https://yandex.ru/maps/225/russia/?utm_medium=mapframe&utm_source=maps"
+                        className={contactCardsCardsStyles.secondMapStyle}>
+                        Россия
+                    </a>
+                    <a href="https://yandex.ru/maps/213/moscow/house/pyatnitskaya_ulitsa_25s1/Z04YcARgQEAAQFtvfXt1c31iZw==/?azimuth=5.406327159827727&ll=37.630739%2C55.741198&tilt=0.07226938445335129&utm_medium=mapframe&utm_source=maps&z=17.7"
+                        className={contactCardsCardsStyles.thirdMapStyle}>
+                        Пятницкая улица, 25с1 — Яндекс Карты
+                    </a>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?azimuth=5.406327159827727&ll=37.630739%2C55.741198&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwNDM5MBJA0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCf0Y_RgtC90LjRhtC60LDRjyDRg9C70LjRhtCwLCAyNdGBMSIKDRuGFkIV7fdeQg%2C%2C&tilt=0.07226938445335129&z=17.7"
+                        width="550" height="550" frameBorder="1"
+                        className={contactCardsCardsStyles.fourthMapStyle}></iframe>
+                </div>
             </div>
             <div className={contactCardsCardsStyles.ContactCard__Section__Block}>
                 <div className={contactCardsCardsStyles.Block__AboutUs}>
