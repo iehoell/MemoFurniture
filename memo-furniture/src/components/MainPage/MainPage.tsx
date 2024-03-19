@@ -41,13 +41,13 @@ function MainPage(){
                 </p>
                 <CatalogueCards></CatalogueCards>
             </div>
-            <div className={mainPageStyles.CatalogueSection}>
+            <div className={mainPageStyles.CatalogueSection} id='aboutUs'>
                 <p className={mainPageStyles.CatalogueSection__title}>
                     Преимущества
                 </p>
                 <AdvantagesCards></AdvantagesCards>
             </div>
-            <div className={mainPageStyles.CatalogueSection}>
+            <div className={mainPageStyles.CatalogueSection} id='contacts'>
                 <p className={mainPageStyles.CatalogueSection__title}>
                     Контакты
                 </p>

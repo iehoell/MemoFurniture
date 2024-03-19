@@ -1,0 +1,81 @@
+.mainContainer{
+  padding-top: 10%;
+  background: #161616;
+  .routing{
+    color: #FFFFFF;
+    margin-left: 10%;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .title{
+    margin-left: 10%;
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .flexBlocks{
+    margin-left: 10%;
+    display: flex;
+    .sortMenu{
+      width: 20%;
+      .sortMenu__category{
+        color: #B7B7B7;
+        .titleOfDropdown{
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 400;
+        }
+        .dropbtn{
+          background: transparent;
+          color: #FFFFFF;
+          border-radius: 50px;
+        }
+        option{
+          background: #161616;
+          color: #FFFFFF;
+        }
+        .sortMenu__category__priceRadius{
+          display: flex;
+          justify-content: space-between;
+          width: 45%;
+        }
+        .flexRadioInputs{
+          display: flex;
+          flex-wrap: nowrap;
+          .sortMenu__category__radio{
+            margin-right: 4%;
+          }
+          .sortMenu__category__radio:hover{
+            cursor: pointer;
+          }
+        }
+        .sortMenu__category__title{
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
+    }
+    .productCardsArea{
+      width: 75%;
+      .showMoreButton{
+        margin: 0 auto;
+        display: block;
+        background: transparent;
+        color: #FFFFFF;
+        height: 40px;
+        width: 300px;
+        border-radius: 50px;
+        border: 1px solid #E7772E;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .showMoreButton:hover{
+        background: #E7772E;
+        color: #FFFFFF;
+        border: none;
+      }
+    }
+  }
+}

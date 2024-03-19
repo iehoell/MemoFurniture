@@ -8,11 +8,11 @@ function Header(){
                 <div className={headerStyles.header__title}>Memo Furniture</div>
                 <input placeholder={'Поиск'} className={headerStyles.header__inputField}></input>
                 <div className={headerStyles.header__navMenu}>
-                    <a className={headerStyles.navMenu__navMenuItem}>Главная</a>
-                    <a className={headerStyles.navMenu__navMenuItem}>Каталог</a>
+                    <a className={headerStyles.navMenu__navMenuItem} href='/'>Главная</a>
+                    <a className={headerStyles.navMenu__navMenuItem} href='/catalogue'>Каталог</a>
                     <a className={headerStyles.navMenu__navMenuItem}>Распродажа</a>
-                    <a className={headerStyles.navMenu__navMenuItem}>О магазине</a>
-                    <a className={headerStyles.navMenu__navMenuItem}>Контакты</a>
+                    <a className={headerStyles.navMenu__navMenuItem} href='/#aboutUs'>О магазине</a>
+                    <a className={headerStyles.navMenu__navMenuItem} href='/#contacts'>Контакты</a>
                 </div>
                 <div className={headerStyles.header__icons}>
                     <a>ico</a>
