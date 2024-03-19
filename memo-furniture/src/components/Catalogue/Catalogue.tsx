@@ -17,23 +17,23 @@ function Catalogue(){
                     <div className={catalogueStyles.sortMenu__category}>
                         <p className={catalogueStyles.sortMenu__category__title}>Категория</p>
                         <div className={catalogueStyles.flexRadioInputs}>
-                            <input className={catalogueStyles.sortMenu__category__radio} type='radio'/>
+                            <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
                             <p>Диваны и кресла</p>
                         </div>
                         <div className={catalogueStyles.flexRadioInputs}>
-                            <input className={catalogueStyles.sortMenu__category__radio} type='radio'/>
+                            <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
                             <p>Столы и стулья</p>
                         </div>
                         <div className={catalogueStyles.flexRadioInputs}>
-                            <input className={catalogueStyles.sortMenu__category__radio} type='radio'/>
+                            <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
                             <p>Кровати</p>
                         </div>
                         <div className={catalogueStyles.flexRadioInputs}>
-                            <input className={catalogueStyles.sortMenu__category__radio} type='radio'/>
+                            <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
                             <p>Шкафы и стеллажи</p>
                         </div>
                         <div className={catalogueStyles.flexRadioInputs}>
-                            <input className={catalogueStyles.sortMenu__category__radio} type='radio'/>
+                            <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
                             <p>Комоды и тумбы</p>
                         </div>
                     </div>
