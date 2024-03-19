@@ -1,0 +1,109 @@
+.Section {
+  justify-content: space-between;
+  display: flex;
+  //margin: 0 10% 10% 10%;
+  .ContactCard__Section__Block {
+    width: 51%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    .Block__AboutUs{
+      .AboutUs__Cards{
+        display: flex;
+        flex-wrap: wrap;
+        color: #B7B7B7;
+        .AboutUs__Cards__item{
+          color: #B7B7B7;
+          margin-right: 5%;
+          width: 40%;
+        }
+      }
+    }
+    .Form{
+      .Form__Title{
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      textarea{
+        color: #B7B7B7;
+        resize: none;
+        width: 98%;
+        height: 80px;
+        padding: 10px;
+        background: transparent;
+        border: 1px solid #161616;
+        margin-bottom: 2%;
+      }
+      textarea:focus{
+        outline: none;
+        border: 1px solid #B7B7B7;
+      }
+      input{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 2px solid #161616;
+        color: lightgray;
+        width: 100%;
+        background: transparent;
+        margin-bottom: 5%;
+        outline: none;
+      }
+      input:focus{
+        border-bottom: 2px solid #B7B7B7;
+      }
+      .input::placeholder{
+        border: none;
+        color: lightgray;
+        padding-left: 0;
+      }
+      .Form__flexInputs{
+        display: flex;
+        justify-content: space-between;
+        width: 101%;
+        .Form__flexInputs__item{
+          margin-right: 3%;
+        }
+      }
+      .Form__button{
+        background: #E7772E;
+        color: #FFFFFF;
+        height: 40px;
+        width: 150px;
+        border-radius: 50px;
+        border: 1px solid #E7772E;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        float: right;
+      }
+      .Form__button:hover{
+        background: transparent;
+        color: #FFFFFF;
+        border: 1px solid #E7772E;
+      }
+    }
+  }
+  .ContactCard__Section__Image{
+    .firstMapStyle{
+      position:relative;
+      overflow:hidden;
+      border-radius: 20px;
+  }
+    .secondMapStyle{
+      color:#eee;
+      font-size:12px;
+      position:absolute;
+      top:0;
+    }
+    .thirdMapStyle{
+      color:#eee;
+      font-size:12px;
+      position:absolute;
+      top:14px;
+    }
+    .fourthMapStyle{
+      position:relative;
+    }
+  }
+}

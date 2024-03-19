@@ -1,15 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-interface AppProps {
-    message: string;
-}
-
-const App: React.FC<AppProps> = ({ message }) => {
-    return <h1>{message}</h1>;
-};
-
-ReactDOM.render(
-    <App message='Hello, world!' />,
-    document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+            <App />
+    </React.StrictMode>
 );

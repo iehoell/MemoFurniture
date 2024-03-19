@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./declaration.d.ts"],
+    "declaration": true, // Включает генерацию d.ts файлов
+    "moduleResolution":"node",
     "outDir": "./dist/",
     "module": "es6",
     "target": "es5",
