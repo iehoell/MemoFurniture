@@ -11,6 +11,7 @@
   background-image: url('../../assets/MainPageImage.webp');
   background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid #161616;
 }
 .CatalogueCard:hover{
   border: 1px solid #B7B7B7;
@@ -21,4 +22,8 @@
   font-weight: 400;
   padding-top: 130px;
   padding-left: 50px;
+}
+.link{
+  text-decoration: none;
+  color: #FFFFFF;
 }

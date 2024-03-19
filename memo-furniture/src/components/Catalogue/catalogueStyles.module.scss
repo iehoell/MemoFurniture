@@ -20,6 +20,12 @@
       width: 20%;
       .sortMenu__category{
         color: #B7B7B7;
+        .priceRange{
+          background: orange;
+        }
+        .priceRange:hover{
+          cursor: pointer;
+        }
         .titleOfDropdown{
           color: #FFFFFF;
           font-size: 24px;
@@ -29,6 +35,9 @@
           background: transparent;
           color: #FFFFFF;
           border-radius: 50px;
+        }
+        .dropbtn:hover{
+          cursor: pointer;
         }
         option{
           background: #161616;

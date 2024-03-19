@@ -41,10 +41,10 @@ function Catalogue(){
                         <p className={catalogueStyles.sortMenu__category__title}>Цена</p>
                         <div className={catalogueStyles.sortMenu__category__priceRadius}>
                             <p>от 4599</p>
-                            <p>до 98345 </p>
+                            <p>до 98345</p>
                         </div>
                         <div>
-                            <input type="range" id="price" name="volume" min="0" max="10"/>
+                            <input type="range" id="price" name="price" min="0" max="100" className={catalogueStyles.priceRange}/>
                         </div>
                         <p className={catalogueStyles.titleOfDropdown}>Назначение</p>
                         <select className={catalogueStyles.dropbtn}>

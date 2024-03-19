@@ -6,22 +6,30 @@ function CatalogueCards(props){
         <div className={catalogueCardsStyles.CatalogueSection__productionCards__item}>
             <div className={catalogueCardsStyles.CatalogueCard}>
                 <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    Диваны
+                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                        Диваны
+                    </a>
                 </p>
             </div>
             <div className={catalogueCardsStyles.CatalogueCard}>
                 <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    Шкафы
+                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                        Шкафы
+                    </a>
                 </p>
             </div>
             <div className={catalogueCardsStyles.CatalogueCard}>
                 <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    Стулья
+                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                        Стулья
+                    </a>
                 </p>
             </div>
             <div className={catalogueCardsStyles.CatalogueCard}>
                 <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    Кровати
+                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                        Кровати
+                    </a>
                 </p>
             </div>
         </div>

@@ -17,10 +17,14 @@ function MainPage(){
                     Оставьте заявку и мы сделаем для вас дизайн-проект бесплатно
                 </p>
                 <button className={mainPageStyles.ImageSection__buttons__catalogue}>
-                    Каталог
+                    <a href='/catalogue' className={mainPageStyles.ImageSection__buttons__catalogue__link}>
+                        Каталог
+                    </a>
                 </button>
                 <button  className={mainPageStyles.ImageSection__buttons__detailed}>
-                    Подробнее
+                    <a href='#aboutUs' className={mainPageStyles.ImageSection__buttons__detailed__link}>
+                        Подробнее
+                    </a>
                 </button>
                 <strong className={mainPageStyles.strong1}>6</strong>
                 <p className={mainPageStyles.achievement1}>

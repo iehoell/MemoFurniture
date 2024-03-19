@@ -26,7 +26,15 @@
       font-weight: 600;
     }
     .flexBlock__description__rating{
+      display: flex;
       color: #B7B7B7;
+      .rating{
+        margin-top: 3%;
+        display: flex;
+      }
+    }
+    .ratingTitle{
+      margin-left: 5%;
     }
     .flexBlock__description__price{
       color: #FFFFFF;
@@ -175,6 +183,14 @@
           font-weight: 400;
           .reviewerCard__description__title__nameAndRating{
             display: flex;
+            svg{
+              fill: yellow;
+              margin-right: 3%;
+            }
+            .rating{
+              margin-top: 20%;
+              display: flex;
+            }
             .reviewerCard__description__title__nameAndRating__name{
               margin-right: 20%;
             }

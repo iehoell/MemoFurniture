@@ -42,6 +42,10 @@
     top: 70%;
     left: 15%;
   }
+  .ImageSection__buttons__catalogue__link{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
 
   .ImageSection__buttons__catalogue:hover {
     background: #E7772E;
@@ -62,6 +66,10 @@
     font-size: 16px;
     top: 70%;
     left: 28%;
+  }
+  .ImageSection__buttons__detailed__link{
+    text-decoration: none;
+    color: #FFFFFF;
   }
 
   .ImageSection__buttons__detailed:hover {
