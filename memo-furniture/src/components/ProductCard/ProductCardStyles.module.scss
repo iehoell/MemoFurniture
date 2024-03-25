@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   .productCardsArea__cell__delivery{
     color: #B7B7B7;
+    font-size: 14px;
   }
   .productCardsArea__cell{
     margin-left: 5%;
@@ -15,6 +16,7 @@
     }
     .productCardsArea__cell__flex{
       display: flex;
+      justify-content: space-between;
     }
     .productCardsArea__cell__button{
       background: #E7772E;
@@ -26,8 +28,6 @@
       cursor: pointer;
       font-weight: 500;
       font-size: 16px;
-      margin-left: 8%;
-
     }
     .productCardsArea__cell__button:hover{
       background: transparent;
@@ -64,4 +64,11 @@
       font-weight: 400;
     }
   }
+}
+.deliverySVGFlex{
+  display: flex;
+  margin-left: 5%;
+}
+.deliverySVG{
+  margin-right: 5%;
 }
