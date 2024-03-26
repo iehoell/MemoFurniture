@@ -1,7 +1,10 @@
 header{
-  margin-top: 20px;
+  padding-top: 15px;
   position: fixed;
   width: 100%;
+  background: #161616;
+  padding-bottom: 5px;
+  z-index: 2;
 }
 .header__title{
   color: white;
@@ -43,5 +46,10 @@ header{
   }
 }
 .header__icons{
+  display: flex;
   color: #FFFFFF;
+  .firstSVG{
+    margin-right: 20px;
+  }
 }
+

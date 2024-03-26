@@ -27,7 +27,7 @@ function AdvantagesCards(props){
                 </div>
             </div>
             <div className={advantagesCardsCardsStyles.AdvantageCards__Section__Image}>
-                <img src={mainPageImage} className={advantagesCardsCardsStyles.Image}></img>
+                <img src={mainPageImage} className={advantagesCardsCardsStyles.Image}/>
             </div>
         </div>
     );

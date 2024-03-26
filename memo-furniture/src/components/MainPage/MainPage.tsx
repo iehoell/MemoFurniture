@@ -16,16 +16,16 @@ function MainPage(){
                 <p className={mainPageStyles.ImageSection__description}>
                     Оставьте заявку и мы сделаем для вас дизайн-проект бесплатно
                 </p>
-                <button className={mainPageStyles.ImageSection__buttons__catalogue}>
-                    <a href='/catalogue' className={mainPageStyles.ImageSection__buttons__catalogue__link}>
+                <a href='/catalogue' className={mainPageStyles.ImageSection__buttons__catalogue__link}>
+                    <button className={mainPageStyles.ImageSection__buttons__catalogue}>
                         Каталог
-                    </a>
-                </button>
-                <button  className={mainPageStyles.ImageSection__buttons__detailed}>
-                    <a href='#aboutUs' className={mainPageStyles.ImageSection__buttons__detailed__link}>
+                    </button>
+                </a>
+                <a href='#aboutUs' className={mainPageStyles.ImageSection__buttons__detailed__link}>
+                    <button  className={mainPageStyles.ImageSection__buttons__detailed}>
                         Подробнее
-                    </a>
-                </button>
+                    </button>
+                </a>
                 <strong className={mainPageStyles.strong1}>6</strong>
                 <p className={mainPageStyles.achievement1}>
                      Лет опыта

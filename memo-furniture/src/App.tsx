@@ -6,6 +6,7 @@ import MainPage from './components/MainPage/MainPage';
 import Catalogue from "./components/Catalogue/Catalogue";
 import ProductPage from "./components/ProductPage/ProductPage";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
+import PlacingOrderPage from "./components/PlacingOrderPage/PlacingOrderPage";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/catalogue" element={<Catalogue />}/>
                     <Route path="/productPage" element={<ProductPage />}/>
                     <Route path="/shoppingCart" element={<ShoppingCart />}/>
+                    <Route path="/order" element={<PlacingOrderPage/>}/>
                 </Routes>
             </BrowserRouter>
             <Footer/>

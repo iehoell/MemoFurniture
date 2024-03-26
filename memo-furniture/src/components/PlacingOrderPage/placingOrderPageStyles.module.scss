@@ -1,0 +1,158 @@
+.mainContainer{
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  .mainContainer__title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+  .mainContainer__flexBlocks{
+    display: flex;
+    .promocode{
+      display: flex;
+      margin: 5%;
+      border-radius: 25px;
+      color: #FFFFFF;
+      background: #161616;
+      height: 40px;
+      .Form__input{
+        border-radius: 5px 0 0 5px;
+        padding: 10px;
+        background: #696969;
+        color: #B7B7B7;
+        outline: none;
+        width: 50%;
+      }
+      .Form__input::placeholder{
+        color: #B7B7B7;
+      }
+      .Form__button{
+        background: #E7772E;
+        color: #FFFFFF;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid #E7772E;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        float: right;
+        width: 50%;
+      }
+      .Form__button:hover{
+        background: transparent;
+        color: #FFFFFF;
+        border: 1px solid #E7772E;
+      }
+    }
+    .mainContainer__flexBlocks__finalPrice{
+      margin-left: 2%;
+      border-radius: 25px;
+      color: #FFFFFF;
+      background: #161616;
+      width: 50%;
+      height: 100%;
+      .Pay{
+        background: #E7772E;
+        color: #FFFFFF;
+        border-radius: 25px;
+        padding: 10px;
+        width: 30%;
+        margin-left: 5%;
+        border: 1px solid #E7772E;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        float: left;
+      }
+      .Pay:hover{
+        background: transparent;
+        color: #FFFFFF;
+        border: 1px solid #E7772E;
+      }
+      .PromocodeBlock{
+        margin-top: 10%;
+      }
+      .PromocodeBlock__title{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 5%;
+      }
+      .mainContainer__flexBlocks__finalPrice__flexBlock{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        .mainContainer__flexBlocks__finalPrice__item__delivery{
+          color: #E7772E;
+          font-size: 20px;
+        }
+      }
+      .mainContainer__flexBlocks__finalPrice__item{
+        color: #B7B7B7;
+        font-size: 20px;
+      }
+      .mainContainer__flexBlocks__finalPrice__lastItem{
+        font-size: 20px;
+      }
+      .mainContainer__flexBlocks__finalPrice__title{
+        margin-top: 5%;
+        margin-bottom: 0;
+        margin-left: 5%;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+    form{
+      margin: 2% 10% 5% 5%;
+    }
+    .mainContainer__flexBlocks__orderForm{
+      width: 50%;
+      height: 100%;
+      background: #161616;
+      border-radius: 25px;
+      .form__title{
+        color: #FFFFFF;
+        font-weight: 400;
+      }
+      .flexTitle{
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        .flexInput{
+          width: 45%;
+        }
+      }
+      .mainContainer__flexBlocks__orderForm__title{
+        margin-top: 5%;
+        margin-bottom: 0;
+        margin-left: 5%;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      input{
+        border-radius: 5px;
+        color: #B7B7B7;
+        background: #696969;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+      }
+      textarea{
+        padding: 10px;
+        color: #B7B7B7;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        resize: none;
+        background: #696969;
+        width: 100%;
+        height: 150px;
+      }
+    }
+  }
+}
