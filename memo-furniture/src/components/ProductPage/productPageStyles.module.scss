@@ -13,6 +13,12 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 15%;
+  .graphicTitle{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10%;
+  }
   .flexBlock__slider{
     border-radius: 20px;
     margin-left: 10%;
@@ -126,6 +132,7 @@
       cursor: pointer;
       font-weight: 600;
       font-size: 16px;
+      margin-left: 3%;
     }
     .ImageSection__buttons__toShoppingCartButton:hover{
       border: none;
@@ -211,4 +218,15 @@
       }
     }
   }
+}
+.Graphic__title{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 10%;
+}
+.Graphic__MiniTitle{
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-left: 10%;
 }

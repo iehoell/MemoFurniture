@@ -1,8 +1,10 @@
-import React from 'react';
+//import React from 'react';
+import React, {useState} from 'react';
 import productPageStyles from './productPageStyles.module.scss';
 import Slider from "../Slider/Slider";
 import mainPageImage from '../../assets/MainPageImage.webp';
 import Reviews from "../Reviews/Reviews";
+import Graphic from "../Chart/Chart";
 
 function ProductPage(){
     return(
@@ -92,7 +94,7 @@ function ProductPage(){
                         </div>
                         <div className={productPageStyles.flexBlock__description__flexInputs__amountInput}>
                             <p>Количество</p>
-                            <input type='number' className={productPageStyles.flexBlock__description__flexInputs__amountInput__input} min='1'></input>
+                            <input type='number' className={productPageStyles.flexBlock__description__flexInputs__amountInput__input} min='1' placeholder='1'></input>
                         </div>
                     </div>
                     <div className={productPageStyles.flexBlock__description__productDescription__delivery}>
@@ -102,15 +104,20 @@ function ProductPage(){
                         </p>
                     </div>
                     <div className={productPageStyles.flexBlock__description__productDescription__buttons}>
-                        <button className={productPageStyles.flexBlock__description__productDescription__buttons__buyNowButton}>
-                            Купить сейчас
-                        </button>
+                        <a href='/order'>
+                            <button className={productPageStyles.flexBlock__description__productDescription__buttons__buyNowButton}>
+                                Купить сейчас
+                            </button>
+                        </a>
                         <button  className={productPageStyles.ImageSection__buttons__toShoppingCartButton}>
                             В корзину
                         </button>
                     </div>
                 </div>
             </div>
+            <h5 className={productPageStyles.Graphic__title} id='graphic'>График изменения цен на товар</h5>
+            <p className={productPageStyles.Graphic__MiniTitle}>Выберите тип графика: </p>
+            <Graphic active={''} setActive={''}/>
             <div className={productPageStyles.SectionsList}>
                 <div className={productPageStyles.SectionsList__reviews}>Отзывы</div>
                 <div className={productPageStyles.SectionsList__characteristics}>Характеристики</div>
