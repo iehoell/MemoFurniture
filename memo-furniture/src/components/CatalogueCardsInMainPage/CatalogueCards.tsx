@@ -4,34 +4,34 @@ import catalogueCardsStyles from './catalogueCardsStyles.module.scss';
 function CatalogueCards(props){
     return(
         <div className={catalogueCardsStyles.CatalogueSection__productionCards__item}>
-            <div className={catalogueCardsStyles.CatalogueCard}>
-                <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+            <a href='/catalogue' className={catalogueCardsStyles.link}>
+                <div className={catalogueCardsStyles.CatalogueCard}>
+                    <p className={catalogueCardsStyles.CatalogueCard__title}>
                         Диваны
-                    </a>
-                </p>
-            </div>
-            <div className={catalogueCardsStyles.CatalogueCard}>
-                <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                    </p>
+                </div>
+            </a>
+            <a href='/catalogue' className={catalogueCardsStyles.link}>
+                <div className={catalogueCardsStyles.CatalogueCard}>
+                    <p className={catalogueCardsStyles.CatalogueCard__title}>
                         Шкафы
-                    </a>
-                </p>
-            </div>
-            <div className={catalogueCardsStyles.CatalogueCard}>
-                <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                    </p>
+                </div>
+            </a>
+            <a href='/catalogue' className={catalogueCardsStyles.link}>
+                <div className={catalogueCardsStyles.CatalogueCard}>
+                    <p className={catalogueCardsStyles.CatalogueCard__title}>
                         Стулья
-                    </a>
-                </p>
-            </div>
-            <div className={catalogueCardsStyles.CatalogueCard}>
-                <p className={catalogueCardsStyles.CatalogueCard__title}>
-                    <a href='/catalogue' className={catalogueCardsStyles.link}>
+                    </p>
+                </div>
+            </a>
+            <a href='/catalogue' className={catalogueCardsStyles.link}>
+                <div className={catalogueCardsStyles.CatalogueCard}>
+                    <p className={catalogueCardsStyles.CatalogueCard__title}>
                         Кровати
-                    </a>
-                </p>
-            </div>
+                    </p>
+                </div>
+            </a>
         </div>
     );
 }

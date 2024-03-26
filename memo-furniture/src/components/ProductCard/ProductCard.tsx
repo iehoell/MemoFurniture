@@ -5,8 +5,8 @@ function ProductPage(){
     return(
         <div className={ProductPageStyles.productCardsArea__row}>
             <div className={ProductPageStyles.productCardsArea__cell}>
-                <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                 <a className={ProductPageStyles.productCardsArea__cell__link} href='/productPage'>
+                    <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                     <p className={ProductPageStyles.productCardsArea__cell__title}>Диван Нельс Велюр Triniti</p>
                 </a>
                 <div className={ProductPageStyles.productCardsArea__cell__flex}>
@@ -81,8 +81,8 @@ function ProductPage(){
             </div>
 
             <div className={ProductPageStyles.productCardsArea__cell}>
-                <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                 <a className={ProductPageStyles.productCardsArea__cell__link} href='/productPage'>
+                    <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                     <p className={ProductPageStyles.productCardsArea__cell__title}>Диван Нельс Велюр Triniti</p>
                 </a>
                 <div className={ProductPageStyles.productCardsArea__cell__flex}>
@@ -157,8 +157,8 @@ function ProductPage(){
             </div>
 
             <div className={ProductPageStyles.productCardsArea__cell}>
-                <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                 <a className={ProductPageStyles.productCardsArea__cell__link} href='/productPage'>
+                    <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                     <p className={ProductPageStyles.productCardsArea__cell__title}>Диван Нельс Велюр Triniti</p>
                 </a>
                 <div className={ProductPageStyles.productCardsArea__cell__flex}>

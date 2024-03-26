@@ -7,6 +7,8 @@
     font-size: 14px;
   }
   .productCardsArea__cell{
+    border: 1px solid #161616;
+    border-radius: 25px;
     margin-left: 5%;
     display: table-cell;
     width: 300px;
@@ -64,6 +66,9 @@
       font-weight: 400;
     }
   }
+  .productCardsArea__cell:hover{
+    border: 1px solid #696969;
+  }
 }
 .deliverySVGFlex{
   display: flex;
@@ -71,4 +76,7 @@
 }
 .deliverySVG{
   margin-right: 5%;
+}
+svg{
+  margin: 0 2px 0 0;
 }
