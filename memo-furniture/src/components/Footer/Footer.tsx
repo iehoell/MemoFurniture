@@ -7,19 +7,39 @@ function Footer(){
             <div className={footerStyles.footerSections}>
                 <div>
                     <h3 className={footerStyles.footerSections__Title}>Каталог</h3>
-                    <p className={footerStyles.footerSections__navItem}>Диваны и кресла</p>
-                    <p className={footerStyles.footerSections__navItem}>Столы и стулья</p>
-                    <p className={footerStyles.footerSections__navItem}>Кровати</p>
-                    <p className={footerStyles.footerSections__navItem}>Шкафы и стеллажи</p>
-                    <p className={footerStyles.footerSections__navItem}>Камоды и тумбы</p>
+                    <a href='/catalogue' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Диваны и кресла</p>
+                    </a>
+                    <a href='/catalogue' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Столы и стулья</p>
+                    </a>
+                    <a href='/catalogue' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Кровати</p>
+                    </a>
+                    <a href='/catalogue' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Шкафы и стеллажи</p>
+                    </a>
+                    <a href='/catalogue' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Комоды и тумбы</p>
+                    </a>
                 </div>
                 <div>
                     <h3 className={footerStyles.footerSections__Title}>Клиентам</h3>
-                    <p className={footerStyles.footerSections__navItem}>Распродажа</p>
-                    <p className={footerStyles.footerSections__navItem}>О магазине</p>
-                    <p className={footerStyles.footerSections__navItem}>Оплата товара</p>
-                    <p className={footerStyles.footerSections__navItem}>Дизайн проекта</p>
-                    <p className={footerStyles.footerSections__navItem}>Доставка и сборка</p>
+                    <a href='/' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Распродажа</p>
+                    </a>
+                    <a href='/' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>О магазине</p>
+                    </a>
+                    <a href='/' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Оплата товара</p>
+                    </a>
+                    <a href='/' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Дизайн проекта</p>
+                    </a>
+                    <a href='/' className={footerStyles.navLink}>
+                        <p className={footerStyles.footerSections__navItem}>Доставка и сборка</p>
+                    </a>
                 </div>
                 <div>
                     <h3 className={footerStyles.footerSections__Title}>Контакты</h3>

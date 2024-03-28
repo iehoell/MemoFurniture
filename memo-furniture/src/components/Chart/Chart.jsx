@@ -13,27 +13,7 @@ ChartJS.register(
     BarElement
 )
 
-function Graphic({active, setActive}) {
-    const [value, setValue] = useState('')
-    const options = [
-        {label: 'Линейный', value: 1},
-        {label: 'Гистограмма', value: 2},
-    ]
-    function handleSelect(event){
-        setValue(event.target.value)
-        if(event.target.value == 1){
-            l.classList.remove(productPage.hidden);
-            l.classList.add(productPage.visible);
-            b.classList.remove(productPage.visible);
-            b.classList.add(productPage.hidden);
-        }
-        if(event.target.value == 2){
-            b.classList.remove(productPage.hidden);
-            b.classList.add(productPage.visible);
-            l.classList.remove(productPage.visible);
-            l.classList.add(productPage.hidden);
-        }
-    }
+function Graphic() {
     const dataBar = {
         labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь'],
         datasets: [
@@ -80,26 +60,12 @@ function Graphic({active, setActive}) {
             }
         }
     }
-    let l = document.getElementById('line');
-    let b = document.getElementById('bar');
     return(
         <div className={productPage.Graphic}>
-            <select onChange={handleSelect} className={productPage.input}>
-                {options.map(option => (
-                    <option value={option.value}>{option.label}</option>
-                ))}
-            </select>
             <div id='line' className={productPage.visible}>
                 <Line
                     data = {dataLine}
                     options = {optionsLine}
-                    style = {{padding: '20px', width: '200px'}}
-                />
-            </div>
-            <div id='bar' className={productPage.hidden}>
-                <Bar
-                    data = {dataBar}
-                    options = {optionsBar}
                     style = {{padding: '20px', width: '200px'}}
                 />
             </div>

@@ -116,8 +116,7 @@ function ProductPage(){
                 </div>
             </div>
             <h5 className={productPageStyles.Graphic__title} id='graphic'>График изменения цен на товар</h5>
-            <p className={productPageStyles.Graphic__MiniTitle}>Выберите тип графика: </p>
-            <Graphic active={''} setActive={''}/>
+            <Graphic/>
             <div className={productPageStyles.SectionsList}>
                 <div className={productPageStyles.SectionsList__reviews}>Отзывы</div>
                 <div className={productPageStyles.SectionsList__characteristics}>Характеристики</div>
@@ -127,9 +126,6 @@ function ProductPage(){
             <div className={productPageStyles.reviewsBlock}>
                 <div className={productPageStyles.reviewsBlock__productRating}></div>
                 <div className={productPageStyles.reviewsBlock__reviewers}>
-                    <p className={productPageStyles.reviewsBlock__reviewers__title}>Отзывы</p>
-
-                    {/*тут карточки отзывов*/}
                     <Reviews/>
                 </div>
             </div>
