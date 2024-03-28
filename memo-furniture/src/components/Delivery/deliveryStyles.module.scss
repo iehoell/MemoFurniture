@@ -1,0 +1,24 @@
+.mainContainer{
+  .mainContainer__block1{
+    color: #B7B7B7;
+    display: flex;
+    justify-content: space-between;
+    .mainContainer__block1__firstPart{
+      width: 50%;
+    }
+    .mainContainer__block1__secondPart{
+      width: 50%;
+    }
+  }
+  .mainContainer__block2{
+    color: #B7B7B7;
+    display: flex;
+    justify-content: space-between;
+    .mainContainer__block2__firstPart{
+      width: 40%;
+    }
+    .mainContainer__block2__secondPart{
+      width: 50%;
+    }
+  }
+}

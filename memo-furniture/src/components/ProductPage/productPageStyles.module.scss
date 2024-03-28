@@ -147,17 +147,19 @@
   font-size: 24px;
   font-weight: 600;
   color: #B7B7B7;
-  .SectionsList__reviews, .SectionsList__characteristics, .SectionsList__delivery, .SectionsList__ourStores{
+  .SectionsList__reviews{
+    margin-right: 5%;
+    color: #E7772E;
+  }
+  .SectionsList__characteristics, .SectionsList__delivery, .SectionsList__ourStores{
     margin-right: 5%;
   }
-  .SectionsList__reviews:active, .SectionsList__characteristics:active, .SectionsList__delivery:active, .SectionsList__ourStores:active{
+  .SectionsList__reviews:hover, .SectionsList__characteristics:hover, .SectionsList__delivery:hover, .SectionsList__ourStores:hover{
+    cursor: pointer;
     color: #E7772E;
   }
 }
 .reviewsBlock{
-  .reviewsBlock__productRating{
-
-  }
   .reviewsBlock__reviewers{
     .reviewsBlock__reviewers__title{
       display: flex;
@@ -229,4 +231,31 @@
   color: #FFFFFF;
   font-size: 20px;
   margin-left: 10%;
+}
+.characteristicsBlock{
+  color: #FFFFFF;
+  visibility: hidden;
+  height: 0;
+  .characteristicsBlock__characteristics{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.deliveryBlock{
+  color: #FFFFFF;
+  visibility: hidden;
+  height: 0;
+  .deliveryBlock__delivers{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.ourStoresBlock{
+  color: #FFFFFF;
+  visibility: hidden;
+  height: 0;
+  .ourStoresBlock__ourStores{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
