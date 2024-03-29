@@ -230,9 +230,11 @@ class ProductPage extends React.Component{
                                     Купить сейчас
                                 </button>
                             </a>
-                            <button  className={productPageStyles.ImageSection__buttons__toShoppingCartButton}>
-                                В корзину
-                            </button>
+                            <a href='/shoppingCart'>
+                                <button  className={productPageStyles.ImageSection__buttons__toShoppingCartButton}>
+                                    В корзину
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -18,11 +18,11 @@ function Catalogue(){
                         <p className={catalogueStyles.sortMenu__category__title}>Категория</p>
                         <div className={catalogueStyles.flexRadioInputs}>
                             <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
-                            <p>Диваны и кресла</p>
+                            <p>Кресла и стулья</p>
                         </div>
                         <div className={catalogueStyles.flexRadioInputs}>
                             <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>
-                            <p>Столы и стулья</p>
+                            <p>Диваны</p>
                         </div>
                         <div className={catalogueStyles.flexRadioInputs}>
                             <input className={catalogueStyles.sortMenu__category__radio} type='radio' name='radio'/>

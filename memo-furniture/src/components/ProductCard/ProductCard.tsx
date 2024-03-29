@@ -1,15 +1,16 @@
 import ProductPageStyles from './ProductCardStyles.module.scss';
 import mainPageImage from "../../assets/MainPageImage.webp";
 import React from "react";
+import productsData from '../../mockData/productsData.json';
 function ProductPage(){
     return(
         <div className={ProductPageStyles.productCardsArea__row}>
             <a className={ProductPageStyles.productCardsArea__cell__link} href='/productPage'>
                 <div className={ProductPageStyles.productCardsArea__cell}>
                         <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
-                        <p className={ProductPageStyles.productCardsArea__cell__title}>Диван Нельс Велюр Triniti</p>
+                        <p className={ProductPageStyles.productCardsArea__cell__title}>{productsData.product1.name}</p>
                         <div className={ProductPageStyles.productCardsArea__cell__flex}>
-                            <p className={ProductPageStyles.productCardsArea__cell__flex__price}>33 990₽</p>
+                            <p className={ProductPageStyles.productCardsArea__cell__flex__price}>{productsData.product1.price}</p>
                             <p className={ProductPageStyles.productCardsArea__cell__flex__rating}>
                                 <div className={ProductPageStyles.rating}>
                                     <svg
