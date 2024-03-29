@@ -2,8 +2,20 @@ import React from 'react';
 import catalogueStyles from './catalogueStyles.module.scss';
 import mainPageImage from '../../assets/MainPageImage.webp';
 import ProductCard from "../ProductCard/ProductCard";
+import productsData from '../../mockData/productsData';
 
 function Catalogue(){
+    const cardsComponents = productsData.map(cards => <ProductCard
+        key={cards.key}
+        type={cards.type}
+        name={cards.name}
+        price={cards.price}
+        purpose={cards.purpose}
+        material={cards.material}
+        color={cards.color}
+        style={cards.style}
+        brand={cards.brand}
+    />)
     return(
         <div className={catalogueStyles.mainContainer}>
             <div className={catalogueStyles.routing}>
@@ -48,40 +60,41 @@ function Catalogue(){
                         </div>
                         <p className={catalogueStyles.titleOfDropdown}>Назначение</p>
                         <select className={catalogueStyles.dropbtn}>
-                            <option>ссылка 1</option>
-                            <option>ссылка 2</option>
-                            <option>ссылка 3</option>
+                            <option>предмет декора</option>
                         </select>
                         <p className={catalogueStyles.titleOfDropdown}>Материал</p>
                         <select className={catalogueStyles.dropbtn}>
-                            <option>ссылка 1</option>
-                            <option>ссылка 2</option>
-                            <option>ссылка 3</option>
+                            <option>ткань</option>
+                            <option>кожа</option>
+                            <option>велюр</option>
+                            <option>дерево</option>
+                            <option>дсп</option>
                         </select>
                         <p className={catalogueStyles.titleOfDropdown}>Цвет</p>
                         <select className={catalogueStyles.dropbtn}>
-                            <option>ссылка 1</option>
-                            <option>ссылка 2</option>
-                            <option>ссылка 3</option>
+                            <option>бежевый</option>
+                            <option>серый</option>
+                            <option>черный</option>
+                            <option>бардовый</option>
+                            <option>черный</option>
+                            <option>синий</option>
+                            <option>фиолетовый</option>
+                            <option>оранжевый</option>
                         </select>
                         <p className={catalogueStyles.titleOfDropdown}>Стиль</p>
                         <select className={catalogueStyles.dropbtn}>
-                            <option>ссылка 1</option>
-                            <option>ссылка 2</option>
-                            <option>ссылка 3</option>
+                            <option>modern</option>
                         </select>
                         <p className={catalogueStyles.titleOfDropdown}>Бренд</p>
                         <select className={catalogueStyles.dropbtn}>
-                            <option>ссылка 1</option>
-                            <option>ссылка 2</option>
-                            <option>ссылка 3</option>
+                            <option>Triniti</option>
+                            <option>Talot</option>
+                            <option>Tacery</option>
                         </select>
                     </div>
                 </div>
                 <div className={catalogueStyles.productCardsArea}>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
+                    {cardsComponents}
                     <button className={catalogueStyles.showMoreButton}>
                         Показать еще товары
                     </button>

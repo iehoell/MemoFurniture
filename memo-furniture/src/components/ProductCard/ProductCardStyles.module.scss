@@ -1,7 +1,7 @@
 .productCardsArea__row{
   margin-bottom: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   .productCardsArea__cell__link{
     text-decoration: none;
   }
@@ -62,7 +62,7 @@
     .productCardsArea__cell__title{
       margin-left: 8%;
       color: #FFFFFF;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
     }
   }
