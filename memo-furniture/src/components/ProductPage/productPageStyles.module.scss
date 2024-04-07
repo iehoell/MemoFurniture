@@ -160,6 +160,7 @@
   }
 }
 .reviewsBlock{
+  display: block;
   .reviewsBlock__reviewers{
     .reviewsBlock__reviewers__title{
       display: flex;
@@ -234,8 +235,7 @@
 }
 .characteristicsBlock{
   color: #FFFFFF;
-  visibility: hidden;
-  height: 0;
+  display: none;
   .characteristicsBlock__characteristics{
     margin-left: 10%;
     margin-right: 10%;
@@ -243,8 +243,7 @@
 }
 .deliveryBlock{
   color: #FFFFFF;
-  visibility: hidden;
-  height: 0;
+  display: none;
   .deliveryBlock__delivers{
     margin-left: 10%;
     margin-right: 10%;
@@ -252,8 +251,7 @@
 }
 .ourStoresBlock{
   color: #FFFFFF;
-  visibility: hidden;
-  height: 0;
+  display: none;
   .ourStoresBlock__ourStores{
     margin-left: 10%;
     margin-right: 10%;

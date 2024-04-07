@@ -1,7 +1,8 @@
 import ProductPageStyles from './ProductCardStyles.module.scss';
 import mainPageImage from "../../assets/MainPageImage.webp";
 import React from "react";
-function ProductPage(props){
+import chair1 from '../../assets/chair_1.webp';
+function ProductCard(props){
     return(
         <div className={ProductPageStyles.productCardsArea__row}>
             <a className={ProductPageStyles.productCardsArea__cell__link} href='/productPage'>
@@ -84,4 +85,4 @@ function ProductPage(props){
         </div>
     );
 }
-export default ProductPage;
+export default ProductCard;

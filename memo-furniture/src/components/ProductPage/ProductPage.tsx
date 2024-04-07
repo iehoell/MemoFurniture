@@ -26,16 +26,16 @@ class ProductPage extends React.Component{
         ourStoresButton.style.color = '#B7B7B7';
         reviewsButton.style.color = '#E7772E';
         //показываем тот блок, который нам нужен, и скрываем все остальные
-        deliveryBlock.style.visibility = 'hidden';
+        deliveryBlock.style.display = 'none';
         deliveryBlock.style.height = '0';
 
-        characteristicsBlock.style.visibility = 'hidden';
+        characteristicsBlock.style.display = 'none';
         characteristicsBlock.style.height = '0';
 
-        ourStoresBlock.style.visibility = 'hidden';
+        ourStoresBlock.style.display = 'none';
         ourStoresBlock.style.height = '0';
 
-        reviewsBlock.style.visibility = 'visible';
+        reviewsBlock.style.display = 'block';
         reviewsBlock.style.height = '100%';
     };
     characteristicsButtonClick = () => {
@@ -55,16 +55,16 @@ class ProductPage extends React.Component{
         ourStoresButton.style.color = '#B7B7B7';
         characteristicsButton.style.color = '#E7772E';
         //показываем тот блок, который нам нужен, и скрываем все остальные
-        reviewsBlock.style.visibility = 'hidden';
+        reviewsBlock.style.display = 'none';
         reviewsBlock.style.height = '0';
 
-        deliveryBlock.style.visibility = 'hidden';
+        deliveryBlock.style.display = 'none';
         deliveryBlock.style.height = '0';
 
-        ourStoresBlock.style.visibility = 'hidden';
+        ourStoresBlock.style.display = 'none';
         ourStoresBlock.style.height = '0';
 
-        characteristicsBlock.style.visibility = 'visible';
+        characteristicsBlock.style.display = 'block';
         characteristicsBlock.style.height = '100%';
     };
 
@@ -85,16 +85,16 @@ class ProductPage extends React.Component{
         ourStoresButton.style.color = '#B7B7B7';
         deliveryButton.style.color = '#E7772E';
         //показываем тот блок, который нам нужен, и скрываем все остальные
-        reviewsBlock.style.visibility = 'hidden';
+        reviewsBlock.style.display = 'none';
         reviewsBlock.style.height = '0';
 
-        characteristicsBlock.style.visibility = 'hidden';
+        characteristicsBlock.style.display = 'none';
         characteristicsBlock.style.height = '0';
 
-        ourStoresBlock.style.visibility = 'hidden';
+        ourStoresBlock.style.display = 'none';
         ourStoresBlock.style.height = '0';
 
-        deliveryBlock.style.visibility = 'visible';
+        deliveryBlock.style.display = 'block';
         deliveryBlock.style.height = '100%';
     };
 
@@ -115,16 +115,16 @@ class ProductPage extends React.Component{
         deliveryButton.style.color = '#B7B7B7';
         ourStoresButton.style.color = '#E7772E';
         //показываем тот блок, который нам нужен, и скрываем все остальные
-        reviewsBlock.style.visibility = 'hidden';
+        reviewsBlock.style.display = 'none';
         reviewsBlock.style.height = '0';
 
-        characteristicsBlock.style.visibility = 'hidden';
+        characteristicsBlock.style.display = 'none';
         characteristicsBlock.style.height = '0';
 
-        deliveryBlock.style.visibility = 'hidden';
+        deliveryBlock.style.display = 'none';
         deliveryBlock.style.height = '0';
 
-        ourStoresBlock.style.visibility = 'visible';
+        ourStoresBlock.style.display = 'block';
         ourStoresBlock.style.height = '100%';
     };
     render(){
@@ -240,8 +240,6 @@ class ProductPage extends React.Component{
                 </div>
                 <h5 className={productPageStyles.Graphic__title} id='graphic'>График изменения цен на товар</h5>
                 <Graphic/>
-
-
 
                 <div className={productPageStyles.SectionsList}>
                     <div className={productPageStyles.SectionsList__reviews}
