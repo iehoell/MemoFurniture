@@ -34,6 +34,7 @@
         }
         .dropbtn{
           background: transparent;
+          font-size: 15px;
           color: #FFFFFF;
           border-radius: 50px;
         }
@@ -68,6 +69,50 @@
     }
     .productCardsArea{
       width: 75%;
+      .productCardsArea__all{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .productCardsArea__chair{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__sofa{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__bed{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__cabinet{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__closet{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__triniti{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__talot{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
+      .productCardsArea__tacery{
+        display: none;
+        flex-wrap: wrap;
+        height: 0;
+      }
       .showMoreButton{
         margin: 0 auto;
         display: block;

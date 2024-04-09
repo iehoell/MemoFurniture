@@ -1,7 +1,10 @@
 .productCardsArea__row{
   margin-bottom: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  .productCardsArea__cell__link{
+    text-decoration: none;
+  }
   .productCardsArea__cell__delivery{
     color: #B7B7B7;
     font-size: 14px;
@@ -13,9 +16,6 @@
     display: table-cell;
     width: 300px;
     height: 450px;
-    .productCardsArea__cell__link{
-      text-decoration: none;
-    }
     .productCardsArea__cell__flex{
       display: flex;
       justify-content: space-between;
@@ -62,12 +62,9 @@
     .productCardsArea__cell__title{
       margin-left: 8%;
       color: #FFFFFF;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
     }
-  }
-  .productCardsArea__cell:hover{
-    border: 1px solid #696969;
   }
 }
 .deliverySVGFlex{

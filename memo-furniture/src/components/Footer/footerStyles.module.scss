@@ -7,6 +7,14 @@ footer{
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #B7B7B7;
+  .footerSections__navItemContacts{
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .navLink{
+    text-decoration: none;
+  }
   .footerSections__Title{
     color: #FFFFFF;
     font-size: 24px;
@@ -16,6 +24,10 @@ footer{
     color: darkgray;
     font-size: 15px;
     font-weight: 400;
+  }
+  .footerSections__navItem:hover{
+    cursor: pointer;
+    color: #E7772E;
   }
 }
 .underlineSection{

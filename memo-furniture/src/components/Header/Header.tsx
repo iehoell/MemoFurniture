@@ -5,28 +5,32 @@ function Header(){
     return(
         <header>
             <div className={headerStyles.header__flexItems}>
-                <div className={headerStyles.header__title}>Memo Furniture</div>
+                <a href='/' className={headerStyles.mainLink}>
+                    <div className={headerStyles.header__title}>
+                        Memo Furniture
+                    </div>
+                </a>
                 <input placeholder={'Поиск'} className={headerStyles.header__inputField}></input>
                 <div className={headerStyles.header__navMenu}>
                     <a className={headerStyles.navMenu__navMenuItem} href='/'>Главная</a>
                     <a className={headerStyles.navMenu__navMenuItem} href='/catalogue'>Каталог</a>
-                    <a className={headerStyles.navMenu__navMenuItem}>Распродажа</a>
+                    <a className={headerStyles.navMenu__navMenuItem} href='/#sale'>Распродажа</a>
                     <a className={headerStyles.navMenu__navMenuItem} href='/#aboutUs'>О магазине</a>
                     <a className={headerStyles.navMenu__navMenuItem} href='/#contacts'>Контакты</a>
                 </div>
                 <div className={headerStyles.header__icons}>
-                    <a href='/order'>
-                        <svg
-                            className={headerStyles.firstSVG}
-                             width='25'
-                             height='25'
-                             fill="#ffffff"
-                             viewBox="0 0 24 24"
-                             xmlns="http://www.w3.org/2000/svg">
-                                <path id="primary"
-                                      d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"/>
-                        </svg>
-                    </a>
+                    {/*<a>*/}
+                    {/*    <svg*/}
+                    {/*        className={headerStyles.firstSVG}*/}
+                    {/*         width='25'*/}
+                    {/*         height='25'*/}
+                    {/*         fill="#ffffff"*/}
+                    {/*         viewBox="0 0 24 24"*/}
+                    {/*         xmlns="http://www.w3.org/2000/svg">*/}
+                    {/*            <path id="primary"*/}
+                    {/*                  d="M19.57,5.44a4.91,4.91,0,0,1,0,6.93L12,20,4.43,12.37A4.91,4.91,0,0,1,7.87,4a4.9,4.9,0,0,1,3.44,1.44,4.46,4.46,0,0,1,.69.88,4.46,4.46,0,0,1,.69-.88,4.83,4.83,0,0,1,6.88,0Z"/>*/}
+                    {/*    </svg>*/}
+                    {/*</a>*/}
                     <a href='/shoppingCart'>
                         <svg
                             className={headerStyles.secondSVG}

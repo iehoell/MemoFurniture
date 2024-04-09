@@ -30,6 +30,9 @@ header{
 .header__flexItems{
   display: flex;
   justify-content: space-around;
+  .mainLink{
+    text-decoration: none;
+  }
 }
 .header__navMenu{
   .navMenu__navMenuItem{
