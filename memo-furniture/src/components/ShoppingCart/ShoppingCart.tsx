@@ -79,7 +79,7 @@ function ShoppingCart(){
                                 <p className={shoppingCartStyles.cartItem__flexContainers__description__counter2}>
                                     В наличии: 8 штук
                                 </p>
-                                <input type='number' className={shoppingCartStyles.cartItem__flexContainers__description__counter} min='1'/>
+                                <input type='number' className={shoppingCartStyles.cartItem__flexContainers__description__counter} min='1' max='8'/>
                             </div>
                         </div>
                     </div>

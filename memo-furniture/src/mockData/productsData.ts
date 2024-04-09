@@ -421,6 +421,46 @@ let closetList = []
 for (const item of productsData) {
   if(item.type == 'Тумба') closetList.push(item)
 }
+//для ткани
+let textileList = []
+for (const item of productsData){
+  if(item.material == 'ткань') textileList.push(item)
+}
+//для кожи
+let leatherList = []
+for (const item of productsData){
+  if(item.material == 'кожа') leatherList.push(item)
+}
+//для велюра
+let veloursList = []
+for (const item of productsData){
+  if(item.material == 'велюр') veloursList.push(item)
+}
+//для дерева
+let woodList = []
+for (const item of productsData){
+  if(item.material == 'дерево') woodList.push(item)
+}
+//для дсп
+let DSPList = []
+for (const item of productsData){
+  if(item.material == 'дсп') DSPList.push(item)
+}
+
+let TrinitiList = []
+for (const item of productsData){
+  if(item.brand == 'Triniti') TrinitiList.push(item)
+}
+
+let TalotList = []
+for (const item of productsData){
+  if(item.brand == 'Talot') TalotList.push(item)
+}
+
+let TaceryList = []
+for (const item of productsData){
+  if(item.brand == 'Tacery') TaceryList.push(item)
+}
 
 export default {
   productsData: productsData,
@@ -428,5 +468,13 @@ export default {
   bedList: bedList,
   sofaList: sofaList,
   cabinetList: cabinetList,
-  closetList: closetList
+  closetList: closetList,
+  textileList: textileList,
+  leatherList: leatherList,
+  veloursList: veloursList,
+  woodList: woodList,
+  DSPList: DSPList,
+  TrinitiList: TrinitiList,
+  TalotList: TalotList,
+  TaceryList: TaceryList
 };
