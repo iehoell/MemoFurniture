@@ -293,17 +293,17 @@ class Catalogue extends React.Component{
                                 <option>дерево</option>
                                 <option>дсп</option>
                             </select>
-                            <p className={catalogueStyles.titleOfDropdown}>Цвет</p>
-                            <select className={catalogueStyles.dropbtn}>
-                                <option>бежевый</option>
-                                <option>серый</option>
-                                <option>черный</option>
-                                <option>бардовый</option>
-                                <option>черный</option>
-                                <option>синий</option>
-                                <option>фиолетовый</option>
-                                <option>оранжевый</option>
-                            </select>
+                            {/*<p className={catalogueStyles.titleOfDropdown}>Цвет</p>*/}
+                            {/*<select className={catalogueStyles.dropbtn}>*/}
+                            {/*    <option>бежевый</option>*/}
+                            {/*    <option>серый</option>*/}
+                            {/*    <option>черный</option>*/}
+                            {/*    <option>бардовый</option>*/}
+                            {/*    <option>черный</option>*/}
+                            {/*    <option>синий</option>*/}
+                            {/*    <option>фиолетовый</option>*/}
+                            {/*    <option>оранжевый</option>*/}
+                            {/*</select>*/}
                             <p className={catalogueStyles.titleOfDropdown}>Стиль</p>
                             <select className={catalogueStyles.dropbtn}>
                                 <option>modern</option>

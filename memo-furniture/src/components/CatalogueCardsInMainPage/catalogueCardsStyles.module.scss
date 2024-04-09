@@ -2,20 +2,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-.CatalogueCard{
-  cursor: pointer;
-  margin: 0 2% 2% 0;
-  width: 550px;
-  height: 200px;
-  border-radius: 20px;
-  background-image: url('../../assets/MainPageImage.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid #161616;
-}
-.CatalogueCard:hover{
-  border: 1px solid #B7B7B7;
-}
 .CatalogueCard__title{
   color: #FFFFFF;
   font-size: 24px;
@@ -28,4 +14,60 @@
   display: block;
   text-decoration: none;
   color: #FFFFFF;
+}
+.CatalogueCard__sofa{
+  cursor: pointer;
+  margin: 0 2% 2% 0;
+  width: 550px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url('../../assets/sofa_4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #161616;
+}
+.CatalogueCard__skaf{
+  cursor: pointer;
+  margin: 0 2% 2% 0;
+  width: 550px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url('../../assets/skaf.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #161616;
+}
+.CatalogueCard__chair{
+  cursor: pointer;
+  margin: 0 2% 2% 0;
+  width: 550px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url('../../assets/styl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #161616;
+}
+.CatalogueCard__bed{
+  cursor: pointer;
+  margin: 0 2% 2% 0;
+  width: 550px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url('../../assets/bed_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #161616;
+}
+.CatalogueCard__sofa:hover{
+  border: 1px solid #B7B7B7;
+}
+.CatalogueCard__skaf:hover{
+  border: 1px solid #B7B7B7;
+}
+.CatalogueCard__chair:hover{
+  border: 1px solid #B7B7B7;
+}
+.CatalogueCard__bed:hover{
+  border: 1px solid #B7B7B7;
 }

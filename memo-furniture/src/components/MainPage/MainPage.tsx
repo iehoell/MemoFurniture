@@ -51,6 +51,15 @@ function MainPage(){
                 </p>
                 <AdvantagesCards></AdvantagesCards>
             </div>
+            <p id='sale'>loremdsaghdgsahgjdas</p>
+            <div className={mainPageStyles.Sale}>
+                <p className={mainPageStyles.Sale__title}>
+                    Получите сегодня, а заплатите только 25%
+                </p>
+                <button className={mainPageStyles.Sale__button}>
+                    Подробнее
+                </button>
+            </div>
             <div className={mainPageStyles.CatalogueSection} id='contacts'>
                 <p className={mainPageStyles.CatalogueSection__title}>
                     Контакты
