@@ -1,7 +1,7 @@
 import ProductPageStyles from './ProductCardStyles.module.scss';
 import mainPageImage from "../../assets/MainPageImage.webp";
 import React from "react";
-import chair1 from '../../assets/chair_1.webp';
+
 function ProductCard(props){
     return(
         <div className={ProductPageStyles.productCardsArea__row}>
