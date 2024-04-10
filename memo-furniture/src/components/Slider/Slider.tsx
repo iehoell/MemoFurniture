@@ -7,7 +7,7 @@ import chair3 from '../../assets/chair3.jpg';
 import _default from "chart.js/dist/plugins/plugin.tooltip";
 
 const flickityOptions = {
-    initialIndex: 2
+    initialIndex: 0
 }
 
 const items = {
@@ -34,7 +34,7 @@ function Slider(){
                             width: 400,
                             height: 500,
                             backgroundSize: "cover",
-                        }}></div>
+                        }} className='plateImage'></div>
                         </>
                     </div>
                 )
