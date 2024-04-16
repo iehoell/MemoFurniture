@@ -476,5 +476,5 @@ export default {
   DSPList: DSPList,
   TrinitiList: TrinitiList,
   TalotList: TalotList,
-  TaceryList: TaceryList
+  TaceryList: TaceryList,
 };

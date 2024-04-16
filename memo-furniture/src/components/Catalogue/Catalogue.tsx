@@ -620,23 +620,12 @@ class Catalogue extends React.Component{
                             </div>
                         </div>
                         <div className={catalogueStyles.sortMenu__category}>
-                            {/*<p className={catalogueStyles.sortMenu__category__title}>Цена</p>*/}
-                            {/*<div className={catalogueStyles.sortMenu__category__priceRadius}>*/}
-                            {/*    <p>от 4599</p>*/}
-                            {/*    <p>до 98345</p>*/}
-                            {/*</div>*/}
-                            {/*<div>*/}
-                            {/*    <input type="range" id="price" name="price" min="0" max="100" className={catalogueStyles.priceRange}/>*/}
-                            {/*</div>*/}
                             <p className={catalogueStyles.titleOfDropdown}>Назначение</p>
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input type='radio' checked>
                                 </input>
                                 <p>Предмет декора</p>
                             </div>
-                            {/*<select className={catalogueStyles.dropbtn}>*/}
-                            {/*    <option>предмет декора</option>*/}
-                            {/*</select>*/}
                             <p className={catalogueStyles.titleOfDropdown}>Материал</p>
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
@@ -683,33 +672,12 @@ class Catalogue extends React.Component{
                                 </input>
                                 <p>ДСП</p>
                             </div>
-                            {/*<select className={catalogueStyles.dropbtn} onChange={() => this.materialSelector()} id='materialSelector'>*/}
-                            {/*    <option value='1'>ткань</option>*/}
-                            {/*    <option value='2'>кожа</option>*/}
-                            {/*    <option value='3'>велюр</option>*/}
-                            {/*    <option value='4'>дерево</option>*/}
-                            {/*    <option value='5'>дсп</option>*/}
-                            {/*</select>*/}
-                            {/*<p className={catalogueStyles.titleOfDropdown}>Цвет</p>*/}
-                            {/*<select className={catalogueStyles.dropbtn}>*/}
-                            {/*    <option>бежевый</option>*/}
-                            {/*    <option>серый</option>*/}
-                            {/*    <option>черный</option>*/}
-                            {/*    <option>бардовый</option>*/}
-                            {/*    <option>черный</option>*/}
-                            {/*    <option>синий</option>*/}
-                            {/*    <option>фиолетовый</option>*/}
-                            {/*    <option>оранжевый</option>*/}
-                            {/*</select>*/}
                             <p className={catalogueStyles.titleOfDropdown}>Стиль</p>
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input type='radio' checked>
                                 </input>
                                 <p>modern</p>
                             </div>
-                            {/*<select className={catalogueStyles.dropbtn}>*/}
-                            {/*    <option>modern</option>*/}
-                            {/*</select>*/}
                             <p className={catalogueStyles.titleOfDropdown}>Бренд</p>
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
@@ -738,11 +706,6 @@ class Catalogue extends React.Component{
                                 </input>
                                 <p>Tacery</p>
                             </div>
-                            {/*<select className={catalogueStyles.dropbtn}>*/}
-                            {/*    <option>Triniti</option>*/}
-                            {/*    <option>Talot</option>*/}
-                            {/*    <option>Tacery</option>*/}
-                            {/*</select>*/}
                         </div>
                     </div>
                     <div className={catalogueStyles.productCardsArea}>
