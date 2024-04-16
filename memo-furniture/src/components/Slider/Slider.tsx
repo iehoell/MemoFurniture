@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import './sliderStyles.css';
 import Flickity from 'react-flickity-component';
 import chair1 from '../../assets/chair1.jpg';
-import chair2 from '../../assets/chair2.jpg';
+import chair2 from '../../assets/chairchair.webp';
 import chair3 from '../../assets/chair3.jpg';
-import _default from "chart.js/dist/plugins/plugin.tooltip";
 
 const flickityOptions = {
     initialIndex: 0
@@ -31,7 +30,7 @@ function Slider(){
                         <>
                         <div style={{
                             backgroundImage: `url(${items['image'][index-1]})`,
-                            width: 400,
+                            width: 440,
                             height: 500,
                             backgroundSize: "cover",
                         }} className='plateImage'></div>

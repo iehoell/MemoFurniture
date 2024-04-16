@@ -1,7 +1,9 @@
 /*! Flickity v2.3.0
 https://flickity.metafizzy.co
 ---------------------------------------------- */
-
+.Slider {
+  width: 75%;
+}
 .flickity-enabled {
   position: relative;
 }
@@ -140,6 +142,4 @@ https://flickity.metafizzy.co
 }
 .plateImage{
   border-radius: 25px;
-  margin-right: 15px;
-  margin-left: 15px;
 }
