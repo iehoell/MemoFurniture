@@ -630,7 +630,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='material'
+                                        name='radio'
                                         id='material1'
                                         onClick={() => this.material1()}>
                                 </input>
@@ -639,7 +639,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='material'
+                                        name='radio'
                                         id='material2'
                                         onClick={() => this.material2()}>
                                 </input>
@@ -648,7 +648,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='material'
+                                        name='radio'
                                         id='material3'
                                         onClick={() => this.material3()}>
                                 </input>
@@ -657,7 +657,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='material'
+                                        name='radio'
                                         id='material4'
                                         onClick={() => this.material4()}>
                                 </input>
@@ -666,7 +666,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='material'
+                                        name='radio'
                                         id='material5'
                                         onClick={() => this.material5()}>
                                 </input>
@@ -682,7 +682,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='brand'
+                                        name='radio'
                                         id='brand1'
                                         onClick={() => this.brand1()}>
                                 </input>
@@ -691,7 +691,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='brand'
+                                        name='radio'
                                         id='brand2'
                                         onClick={() => this.brand2()}>
                                 </input>
@@ -700,7 +700,7 @@ class Catalogue extends React.Component{
                             <div  className={catalogueStyles.flexRadioInputs}>
                                 <input  className={catalogueStyles.sortMenu__category__radio}
                                         type='radio'
-                                        name='brand'
+                                        name='radio'
                                         id='brand3'
                                         onClick={() => this.brand3()}>
                                 </input>
@@ -712,16 +712,16 @@ class Catalogue extends React.Component{
                         <div className={catalogueStyles.productCardsArea__all} id='productCardsArea__all'>
                             {this.cardsComponents}
                         </div>
-                        <div className={catalogueStyles.productCardsArea__chair} id='productCardsArea__chair'>
+                        <div className={catalogueStyles.productCardsArea__closet} id='productCardsArea__chair'>
                             {this.chairComponents}
                         </div>
-                        <div className={catalogueStyles.productCardsArea__sofa} id='productCardsArea__sofa'>
+                        <div className={catalogueStyles.productCardsArea__closet} id='productCardsArea__sofa'>
                             {this.sofaComponents}
                         </div>
-                        <div className={catalogueStyles.productCardsArea__bed} id='productCardsArea__bed'>
+                        <div className={catalogueStyles.productCardsArea__closet} id='productCardsArea__bed'>
                             {this.bedComponents}
                         </div>
-                        <div className={catalogueStyles.productCardsArea__cabinet} id='productCardsArea__cabinet'>
+                        <div className={catalogueStyles.productCardsArea__closet} id='productCardsArea__cabinet'>
                             {this.cabinetComponents}
                         </div>
                         <div className={catalogueStyles.productCardsArea__closet} id='productCardsArea__closet'>
