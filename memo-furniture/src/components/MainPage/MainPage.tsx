@@ -6,6 +6,33 @@ import AdvantagesCards from "../AdvantagesCardsInMainPage/AdvantagesCards";
 import ContactCard from "../ContactsCardInMainPage/ContactCards";
 
 function MainPage(){
+    let project1 = setInterval(projectDone1, 800)
+    let project2 = setInterval(projectDone2, 0.01)
+    let project3 = setInterval(projectDone3, 1)
+    let count1 = 1;
+    let count2 = 17500;
+    let count3 = 1500;
+    function projectDone1(){
+        count1++;
+        document.getElementById('number1').innerHTML = String(count1);
+        if(count1 == 6){
+            clearInterval(project1)
+        }
+    }
+    function projectDone2(){
+        count2++;
+        document.getElementById('number2').innerHTML = String(count2);
+        if(count2 == 18500){
+            clearInterval(project2)
+        }
+    }
+    function projectDone3(){
+        count3++;
+        document.getElementById('number3').innerHTML = String(count3);
+        if(count3 == 2500){
+            clearInterval(project3)
+        }
+    }
     return(
         <div className={mainPageStyles.MainPage}>
             <div className={mainPageStyles.ImageSection}>
@@ -26,15 +53,15 @@ function MainPage(){
                         Подробнее
                     </button>
                 </a>
-                <strong className={mainPageStyles.strong1}>6</strong>
+                <strong className={mainPageStyles.strong1} id='number1'>0</strong>
                 <p className={mainPageStyles.achievement1}>
                      Лет опыта
                 </p>
-                <strong className={mainPageStyles.strong2}>18500+</strong>
+                <strong className={mainPageStyles.strong2} id='number2'>18500+</strong>
                 <p className={mainPageStyles.achievement2}>
                      Довольных клиентов
                 </p>
-                <strong className={mainPageStyles.strong3}>2500+</strong>
+                <strong className={mainPageStyles.strong3} id='number3'>2500+</strong>
                 <p className={mainPageStyles.achievement3}>
                      Товаров
                 </p>

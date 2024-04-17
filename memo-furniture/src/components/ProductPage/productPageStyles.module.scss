@@ -162,6 +162,9 @@
 }
 .reviewsBlock{
   display: block;
+
+  animation: show 0.5s 1;
+  transition: 0.3s;
   .reviewsBlock__reviewers{
     .reviewsBlock__reviewers__title{
       display: flex;
@@ -237,6 +240,9 @@
 .characteristicsBlock{
   color: #FFFFFF;
   display: none;
+
+  animation: show 0.5s 1;
+  transition: 0.3s;
   .characteristicsBlock__characteristics{
     margin-left: 10%;
     margin-right: 10%;
@@ -245,6 +251,9 @@
 .deliveryBlock{
   color: #FFFFFF;
   display: none;
+
+  animation: show 0.5s 1;
+  transition: 0.3s;
   .deliveryBlock__delivers{
     margin-left: 10%;
     margin-right: 10%;
@@ -253,8 +262,22 @@
 .ourStoresBlock{
   color: #FFFFFF;
   display: none;
+
+  animation: show 0.5s 1;
+  transition: 0.3s;
+
   .ourStoresBlock__ourStores{
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+@keyframes show{
+  0%{
+    opacity: 0;
+    transform: translateX(9000px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
   }
 }
