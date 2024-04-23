@@ -18,8 +18,11 @@
         margin-bottom: 0;
       }
       .cartItem{
+        border: 1px solid #161616;
+        padding: 10px;
+        border-radius: 25px;
         width: 90%;
-        margin-bottom: 10%;
+        margin-bottom: 3%;
         .cartItem__flexContainers{
           display: flex;
           .cartItem__flexContainers__image{
@@ -62,6 +65,9 @@
             }
           }
         }
+      }
+      .cartItem:hover{
+        border: 1px solid #696969;
       }
     }
     .flexContainers__containerRight{
