@@ -5,6 +5,29 @@ import ProductCard from "../ProductCard/ProductCard";
 import productsData from '../../mockData/productsData';
 
 class Catalogue extends React.Component{
+    linkChecker = () => {
+        let result = new URL(window.location.href).searchParams.get("seWork");
+        switch (result) {
+            case '1':
+                this.radio2Click()
+                document.getElementById('radio2').setAttribute('checked', 'checked');
+                break;
+            case '2':
+                this.radio4Click()
+                document.getElementById('radio4').setAttribute('checked', 'checked');
+                break;
+            case '3':
+                this.radio1Click()
+                document.getElementById('radio1').setAttribute('checked', 'checked');
+                break;
+            case '4':
+                this.radio3Click()
+                document.getElementById('radio3').setAttribute('checked', 'checked');
+                break;
+            default:
+                console.log(result);
+        }
+    }
     brand1 = () => {
         let productCardsArea__chair = document.getElementById('productCardsArea__chair')
         let productCardsArea__sofa = document.getElementById('productCardsArea__sofa')
@@ -552,6 +575,7 @@ class Catalogue extends React.Component{
         brand={cards.brand}
     />)
     render(){
+        window.onload = this.linkChecker
         return(
             <div className={catalogueStyles.mainContainer}>
                 <div className={catalogueStyles.routing}>
