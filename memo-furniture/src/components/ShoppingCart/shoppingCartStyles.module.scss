@@ -129,3 +129,52 @@
     }
   }
 }
+.counter{
+  display: flex;
+  justify-content: space-between;
+  svg{
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 50%;
+  }
+  .counter__flex{
+    display: flex;
+
+  }
+  .counterText{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  .counter__button__minus{
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    background-color: #E7772E;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .counter__button__plus{
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    background-color: #E7772E;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .counter__button__minus:hover{
+    cursor: pointer;
+  }
+  .counter__button__plus:hover{
+    cursor: pointer;
+  }
+}

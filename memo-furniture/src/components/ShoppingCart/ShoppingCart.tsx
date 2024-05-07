@@ -2,25 +2,68 @@ import React from 'react';
 import shoppingCartStyles from './shoppingCartStyles.module.scss';
 import mainPageImage from '../../assets/MainPageImage.webp';
 import placingOrderPageStyles from "../PlacingOrderPage/placingOrderPageStyles.module.scss";
+import ShoppingCartItem from "./ShoppingCartItem";
+import productsData from "../../mockData/productsData";
+import ProductCard from "../ProductCard/ProductCard";
+import shoppingCartItem from "./ShoppingCartItem";
 
 class ShoppingCart extends React.Component<any, any>{
+    shoppingCartObjects = productsData.TaceryList.map(cards => <ShoppingCartItem
+        key={cards.keys}
+        type={cards.type}
+        name={cards.name}
+        price={cards.price}
+        image={cards.image}
+        purpose={cards.purpose}
+        material={cards.material}
+        color={cards.color}
+        style={cards.style}
+        brand={cards.brand}
+    />)
+    priceObjects = productsData.TaceryList.map(({price}) => (price));
     counter = () => {
         let prices = document.getElementsByClassName(shoppingCartStyles.cartItem__flexContainers__description__price)
         let sale = 10;
-        let priceCount = (Number(prices[0].innerHTML) + Number(prices[1].innerHTML) + Number(prices[2].innerHTML));
-        let saleCount =  (Number(prices[0].innerHTML) + Number(prices[1].innerHTML) + Number(prices[2].innerHTML))/100 * sale;
+        let priceCount = 0;
+        let saleCount =  0;
         let priceWithoutSaleCount = Number(priceCount) - Number(saleCount)
         let count = prices.length
+
+        this.priceObjects.forEach(function(item, i){
+            priceCount += item;
+        })
+        saleCount = Math.round(priceCount/100 * sale);
+        priceWithoutSaleCount = priceCount - saleCount;
 
         let one = document.getElementById('1')
         let two = document.getElementById('2')
         let three = document.getElementById('3')
         let four = document.getElementById('4')
 
-        one.innerText = String(priceCount);
-        two.innerText = String(saleCount);
-        three.innerText = String(priceWithoutSaleCount);
-        four.innerText = String(count + ' ' + 'товара(ов)');
+        one.innerText = String(priceCount) + ' ₽';
+        two.innerText = String(saleCount) + ' ₽';
+        three.innerText = String(priceWithoutSaleCount) + ' ₽';
+        four.innerText = String(count + ' товара(ов)');
+
+        let div = document.getElementById('final');
+        let a = document.createElement('a');
+        let button = document.createElement('button');
+        div.style.margin = '2% 0 0 5%'
+        button.type = 'submit'
+        button.innerHTML = 'Оформить заказ'
+        button.style.background = '#E7772E'
+        button.style.color = '#FFFFFF'
+        button.style.cursor = 'pointer'
+        button.style.fontSize = '16px'
+        button.style.float = 'left'
+        button.style.borderRadius = '25px'
+        button.style.border = '1px solid #E7772E'
+        button.style.width = '50%'
+        button.style.padding = '10px'
+        button.style.fontWeight = '500'
+        a.href = String('/order?count=' + this.priceObjects.length + '&priceCount=' + priceCount + '&saleCount=' + saleCount + '&priceWithoutSaleCount=' + priceWithoutSaleCount);
+        div.appendChild(a);
+        a.appendChild(button);
     }
     render() {
         window.onload = this.counter
@@ -28,78 +71,7 @@ class ShoppingCart extends React.Component<any, any>{
             <div className={shoppingCartStyles.mainContainer}>
                 <div className={shoppingCartStyles.flexContainers}>
                     <div className={shoppingCartStyles.flexContainers__containerLeft}>
-                        <a href='/productPage' className={shoppingCartStyles.ToProductPage}>
-                            <div className={shoppingCartStyles.cartItem}>
-                                <div className={shoppingCartStyles.cartItem__flexContainers}>
-                                    <img src={mainPageImage}
-                                         className={shoppingCartStyles.cartItem__flexContainers__image}/>
-                                    <div className={shoppingCartStyles.cartItem__flexContainers__description}>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__title}>
-                                            <a href='/productPage' className={shoppingCartStyles.ToProductPage1}>
-                                                Кресло для отдыха Амарант
-                                            </a>
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__color}>
-                                            Цвет: бежевый
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__price}>
-                                            10990
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__counter2}>
-                                            В наличии: 8 штук
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href='/productPage' className={shoppingCartStyles.ToProductPage}>
-                            <div className={shoppingCartStyles.cartItem}>
-                                <div className={shoppingCartStyles.cartItem__flexContainers}>
-                                    <img src={mainPageImage}
-                                         className={shoppingCartStyles.cartItem__flexContainers__image}/>
-                                    <div className={shoppingCartStyles.cartItem__flexContainers__description}>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__title}>
-                                            <a href='/productPage' className={shoppingCartStyles.ToProductPage1}>
-                                                Кресло для отдыха Амарант
-                                            </a>
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__color}>
-                                            Цвет: бежевый
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__price}>
-                                            10990
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__counter2}>
-                                            В наличии: 8 штук
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href='/productPage' className={shoppingCartStyles.ToProductPage}>
-                            <div className={shoppingCartStyles.cartItem}>
-                                <div className={shoppingCartStyles.cartItem__flexContainers}>
-                                    <img src={mainPageImage}
-                                         className={shoppingCartStyles.cartItem__flexContainers__image}/>
-                                    <div className={shoppingCartStyles.cartItem__flexContainers__description}>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__title}>
-                                            <a href='/productPage' className={shoppingCartStyles.ToProductPage1}>
-                                                Кресло для отдыха Амарант
-                                            </a>
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__color}>
-                                            Цвет: бежевый
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__price}>
-                                            10990
-                                        </p>
-                                        <p className={shoppingCartStyles.cartItem__flexContainers__description__counter2}>
-                                            В наличии: 8 штук
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                        {this.shoppingCartObjects}
                     </div>
                     <div className={shoppingCartStyles.flexContainers__containerRight}>
                         <div className={shoppingCartStyles.mainContainer__flexBlocks__finalPrice}>
@@ -126,7 +98,7 @@ class ShoppingCart extends React.Component<any, any>{
                                 <p className={shoppingCartStyles.mainContainer__flexBlocks__finalPrice__item}>
                                     Доставка
                                 </p>
-                                <p className={shoppingCartStyles.mainContainer__flexBlocks__finalPrice__item__delivery}>
+                                <p className={shoppingCartStyles.mainContainer__flexBlocks__finalPrice__item__delivery} id='52'>
                                     Бесплатно
                                 </p>
                             </div>
@@ -138,9 +110,12 @@ class ShoppingCart extends React.Component<any, any>{
                                     ?
                                 </p>
                             </div>
-                            <a href='/order?count=3&priceCount=32970&saleCount=3297&priceWithoutSaleCount=29673'>
-                                <button type={"submit"} className={shoppingCartStyles.Pay}>Оформить заказ</button>
-                            </a>
+                            <div id='final'>
+                                    {/*<button type={"submit"} className={shoppingCartStyles.Pay}>Оформить заказ</button>*/}
+                            </div>
+                            {/*<a href={'/order?count=' + this.priceObjects.length + '&priceCount='+  + '&saleCount=3297&priceWithoutSaleCount=29673'}>*/}
+                            {/*    <button type={"submit"} className={shoppingCartStyles.Pay}>Оформить заказ</button>*/}
+                            {/*</a>*/}
                         </div>
                     </div>
                 </div>

@@ -12,9 +12,9 @@ class PlacingOrderPage extends React.Component<any, any>{
         let four = document.getElementById('4')
 
         one.innerText = String(count) + ' ' + 'товара(ов)';
-        two.innerText = String(priceCount);
-        three.innerText = String(saleCount);
-        four.innerText = String(priceWithoutSaleCount);
+        two.innerText = String(priceCount) + ' ₽';
+        three.innerText = String(saleCount) + ' ₽';
+        four.innerText = String(priceWithoutSaleCount) + ' ₽';
     }
     render() {
         window.onload = this.linkChecker
