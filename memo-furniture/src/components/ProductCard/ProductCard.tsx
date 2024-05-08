@@ -5,12 +5,12 @@ import React from "react";
 function ProductCard(props){
     return(
         <div className={ProductPageStyles.productCardsArea__row}>
-            <a className={ProductPageStyles.productCardsArea__cell__link} href='/productPage'>
+            <a className={ProductPageStyles.productCardsArea__cell__link}>
                 <div className={ProductPageStyles.productCardsArea__cell}>
                         <img src={mainPageImage} className={ProductPageStyles.productCardsArea__cell__image}/>
                         <p className={ProductPageStyles.productCardsArea__cell__title}>{props.name}</p>
                         <div className={ProductPageStyles.productCardsArea__cell__flex}>
-                            <p className={ProductPageStyles.productCardsArea__cell__flex__price}>{props.price}</p>
+                            <p className={ProductPageStyles.productCardsArea__cell__flex__price}>{props.price} ₽</p>
                             <p className={ProductPageStyles.productCardsArea__cell__flex__rating}>
                                 <div className={ProductPageStyles.rating}>
                                     <svg
@@ -58,8 +58,8 @@ function ProductCard(props){
                         </div>
                         <div className={ProductPageStyles.productCardsArea__cell__flex}>
                             <div>
-                                <a href='/shoppingCart'>
-                                    <button className={ProductPageStyles.productCardsArea__cell__button}>
+                                <a>
+                                    <button className={ProductPageStyles.productCardsArea__cell__button} id='createCartMassiveButton'>
                                         В корзину
                                     </button>
                                 </a>

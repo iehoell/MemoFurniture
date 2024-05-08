@@ -5,6 +5,10 @@ import ProductCard from "../ProductCard/ProductCard";
 import productsData from '../../mockData/productsData';
 
 class Catalogue extends React.Component{
+    createCartMassive = () => {
+        let button = document.getElementById('createCartMassiveButton')
+        alert(1)
+    }
     linkChecker = () => {
         let result = new URL(window.location.href).searchParams.get("seWork");
         switch (result) {
@@ -573,6 +577,7 @@ class Catalogue extends React.Component{
         color={cards.color}
         style={cards.style}
         brand={cards.brand}
+        item={cards}
     />)
     render(){
         window.onload = this.linkChecker
